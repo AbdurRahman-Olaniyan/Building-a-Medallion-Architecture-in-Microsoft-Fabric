@@ -20,17 +20,17 @@ Datasource: Data was sourced from the popular adventure works data you can [down
 ## Creating Lakehouse:
 In Synapse Data Engineering, create three Lakehouses called Sales_Bronze, Sales_Silver and Sales_Gold.
 
-![Creating Bronze, Silver and Gold Lakehouse](https://github.com/user-attachments/assets/8485c128-1599-46da-b7f6-ed52dc33c798)
+![Creating Bronze, Silver and Gold Lakehouse](https://github.com/user-attachments/assets/f79c3696-57b3-4806-af0f-b89b5817f114)
 
 ## Data Ingestion:
 * In the Sales_Bronze Lakehouse, Upload the: [Sample Adventure Works dataset](https://github.com/AbdurRahman-Olaniyan/Building-a-Medallion-Architecture-in-Microsoft-Fabric/tree/main/Sample_Adventureworks_Dataset)
 
-![Bronze_Layer](https://github.com/user-attachments/assets/77703939-f7d2-4304-ad9b-b5dee199a40b)
+![Bronze_Layer](https://github.com/user-attachments/assets/7b88a204-d284-4c67-82b0-236cc44dcd10)
 
 ## Silver Data Transformation.
 In the Sales_Silver Lakehouse, click on new Notebook to transform data for the Sales_Silver Lakehouse or you can import the [Silver_Data_Transformation Notebook](https://github.com/AbdurRahman-Olaniyan/Building-a-Medallion-Architecture-in-Microsoft-Fabric/blob/main/Silver_Data_Transformation.ipynb). Remember to replace the ABFS File Path of each table from the Sales_Bronze lakehouse before you Run ALL.
 
-![Sales_Silver_Notebook](https://github.com/user-attachments/assets/9cc32938-6738-4ba7-9b39-10d5ef45bc94)
+![Sales_Silver_Notebook](https://github.com/user-attachments/assets/436f3821-0dbe-4897-992d-ed8afc34972e)
 
 ### Step-by-Step Transformation
 1. **Customers Table Transformation**
@@ -72,7 +72,7 @@ The inclusion of `DateInserted` and `SourceFilename` columns ensures that each r
 ## Gold Data Transformation.
 In the Sales_Gold Lakehouse, click on new Notebook to transform data for the Sales_Gold Lakehouse or you can import the [Gold_Data_Transformation Notebook](https://github.com/AbdurRahman-Olaniyan/Building-a-Medallion-Architecture-in-Microsoft-Fabric/blob/main/Gold_Data_Transformation.ipynb). Remember to replace the ABFS File Path of each table from the Sales_Bronze lakehouse before you Run ALL.
 
-![Gold_Layer_Notebook](https://github.com/user-attachments/assets/becf04f1-5da3-435c-9f31-91380e8e760b)
+![Gold_Layer_Notebook](https://github.com/user-attachments/assets/e735ddbe-8fed-4181-8720-208bf671bad3)
 
 ### Step-by-Step Transformation
 This setup ensures that your Gold layer contains refined, cleansed, and business-ready data for analytics. It creates and saves dimension and fact tables in the Gold layer for a lakehouse architecture.
@@ -96,7 +96,7 @@ This setup ensures that your Gold layer contains refined, cleansed, and business
    - Constructs the fact table `tmpSales` from `Sales_Silver.Orders`, joining with dimension tables in the Gold layer. It uses left joins for customer, employee, product, and product category details, with `-1` as the default key for any missing references.
    - Writes the fact table to `Tables/FactSales`.
 
-## Data Modelling.
+## Data Modeling.
 Now, we have the final data in the Sales_Gold Lakehouse, Next is to model the semantic data before visualization in Power BI.
 ![image](https://github.com/user-attachments/assets/069cd62c-d9da-4e5b-b0fa-730004f9b8ac)
 
