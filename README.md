@@ -5,13 +5,14 @@
 ## Project Summary
 This project describes how to implement a medallion lakehouse architecture in Microsoft Fabric. The Medallion architecture consists of three layers: `Bronze Layer` (the Raw Data Layer), `Silver Layer` (validated), and `Gold Layer` (enriched). Each layer has a specific purpose and is designed to support efficient data governance and performance. 
 
-*1 Created Lakehouse
-*2 Data Ingestion. 
-*3 Silver Data Transformation.
-*4 Gold Data Transformation.
-*5 Data Modelling.
-*6 Data Visualization in Power BI Service.
-This project was presented by [Musili Adebyo](https://www.linkedin.com/in/musili-adebayo/) at the [Microsoft Fabric Nigeria](https://community.fabric.microsoft.com/t5/Microsoft-Fabric-Nigeria/gh-p/MicrosoftFabricNigeria) and [ dbrownconsulting](https://community.fabric.microsoft.com/t5/Microsoft-Fabric-Nigeria/gh-p/MicrosoftFabricNigeria  https://www.linkedin.com/posts/dbrownconsulting_analyticsmeetup-dbrownconsulting-microsoftfabric-activity-7255201470994673668-hX6G?utm_source=share&utm_medium=member_desktop) physical meet-up on 26th October 2024
+* Created Lakehouse
+* Data Ingestion. 
+* Silver Data Transformation.
+* Gold Data Transformation.
+* Data Modelling.
+* Data Visualization in Power BI Service.
+
+This project was presented by [Musili Adebyo](https://www.linkedin.com/in/musili-adebayo/) at the [Microsoft Fabric Nigeria](https://community.fabric.microsoft.com/t5/Microsoft-Fabric-Nigeria/gh-p/MicrosoftFabricNigeria) and [dbrownconsulting](https://www.linkedin.com/posts/dbrownconsulting_analyticsmeetup-dbrownconsulting-microsoftfabric-activity-7255201470994673668-hX6G?utm_source=share&utm_medium=member_desktop) physical meet-up on 26th October 2024
 
 ## Data Sources:
 Datasource: Data was sourced from the popular adventure works data you can [download Here](https://github.com/AbdurRahman-Olaniyan/Building-a-Medallion-Architecture-in-Microsoft-Fabric/tree/main/Sample_Adventureworks_Dataset)
